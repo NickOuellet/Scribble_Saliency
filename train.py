@@ -34,11 +34,11 @@ model.cuda()
 params = model.parameters()
 optimizer = torch.optim.Adam(params, opt.lr)
 
-image_root = './data/img/'
-gt_root = './data/gt/'
-mask_root = './data/mask/'
-edge_root = './data/edge/'
-grayimg_root = './data/gray/'
+image_root = './media/nick_ouellet/img/'
+gt_root = './media/nick_ouellet/gt/'
+mask_root = './media/nick_ouellet/mask/'
+edge_root = './media/nick_ouellet/edge/'
+grayimg_root = './media/nick_ouellet/gray/'
 train_loader = get_loader(image_root, gt_root, mask_root, grayimg_root, edge_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
 total_step = len(train_loader)
 
