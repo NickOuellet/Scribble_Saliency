@@ -12,7 +12,6 @@ from utils import clip_gradient,adjust_lr
 import os
 from scipy import misc
 import smoothness
-os.environ["CUDA_VISIBLE_DEVICES"] = '1'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--epoch', type=int, default=30, help='epoch number')
