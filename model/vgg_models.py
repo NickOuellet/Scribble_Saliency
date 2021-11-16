@@ -3,9 +3,9 @@ import torch.nn as nn
 import numpy as np
 import cv2
 import torch.nn.functional as F
-from vgg import B2_VGG
+from .vgg import *
 
-## Channel Attention (CA) Layer
+# Channel Attention (CA) Layer
 class CALayer(nn.Module):
     def __init__(self, channel, reduction=16):
         super(CALayer, self).__init__()
